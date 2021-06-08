@@ -10,9 +10,6 @@
 # .weekday(): Monday=0 .. Sunday=6   | range(5,7) = 5 and 6
 #-----------------------------------------------------------------------------#
 
-
-# TODO: Exception if Caro has Nachtdienst
-
 # Debuging (1 = true | 0 = false)
 _debug = 0
 if _debug: indigo.server.log("Debugging enabled", type="Nightmode")

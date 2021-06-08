@@ -19,7 +19,6 @@ import datetime
 from datetime import time
 
 # Define the values
-_NachtdienstCaro = 0
 _enableNightWeek = time(18,39).strftime('%H:%M')
 _enableNightWE = time(21,15).strftime('%H:%M')
 _disableNightWeek = time(18,41).strftime('%H:%M')
@@ -67,9 +66,6 @@ if not ("night" in indigo.variables):
 holidayTomorrow = indigo.variables["holidayTomorrow"]
 holidayToday = indigo.variables["holidayToday"]
 night = indigo.variables["night"]
-SleepingTempDelta_Simon = indigo.variables["SleepingTempDelta_Simon"]
-SleepingTempDelta_Caro = indigo.variables["SleepingTempDelta_Caro"]
-
 
 # Enable 'night' if tomorrow is a weekday
 if _todayTime == _enableNightWeek:
